@@ -1,0 +1,262 @@
+body{
+display: grid;
+margin: 0;
+padding: 0;
+height: 100vh;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: black;
+
+    border-style: solid;
+  border-color: green;
+
+}
+
+
+
+
+.sidebar{
+    background-color: #6d28d9;
+    grid-area: 1/2/9/3;
+  
+
+}
+
+.dashboard{
+    display: flex;
+    margin-left: 10px;
+    color: white;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    
+
+}
+
+.dashboard h2{
+    font-size: 30px;
+}
+
+.sidebar_items{
+    margin-top: 70px;
+    background-color: #6d28d9;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+}
+.dashboard a{
+    color: white;
+    
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+
+
+
+
+.header{
+    background-color: red;
+    grid-area: 1/3/3/8;
+    
+
+
+}
+
+.header-main{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: white;
+    height: 100%;   
+}
+
+.header-search{
+
+    grid-area: 1/1/2/3;
+    background-color: #a1a1aa;
+    padding-left: 50px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-search input{
+
+    border-radius: 10px;
+    border: none;
+    padding: 8px 8px;
+    
+}
+
+.header-ring{
+
+    grid-area: 1/3/2/4  ;
+    background-color: #a1a1aa;
+
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-ring p{
+    font-size: 25px;
+}
+
+.header-info{
+
+    grid-area: 2/1/3/3  ;
+    background-color: #a1a1aa;
+
+
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+.header-info p{
+    font-size: 30px;
+   
+
+    margin: 0;
+}
+
+.header-info img{
+    margin-right: 20px;
+}
+
+.header-info .short{
+    font-size: 20px;
+
+    margin: 0;
+}
+
+.header-button{
+
+    grid-area: 2/3/3/4  ;
+    background-color: #a1a1aa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-button button{
+    padding: 15px 32px;
+    font-size: 16px;
+    background-color: #14b8a6;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.main{
+    background-color: green;
+    grid-area: 3/3/9/8;
+   
+}
+
+.main-content{
+
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
+}
+
+.main-project{
+    grid-area: 1/1/4/3;
+    background-color: pink;
+    height: 100%;
+    
+
+    
+}
+
+
+
+.project-header{
+    height: 7%;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.project{
+    display: grid;
+ 
+    height: 90%;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: pink;
+
+}
+
+
+.project-item{
+
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 30px;
+
+ 
+    height: 200px;
+    width: 350px;
+
+  }
+  .project-item-logo{
+    position:absolute;
+    bottom:7px;
+    right: 20px;
+ 
+    
+    
+
+   
+    
+  }
+  .project-item-logo img{
+    margin-left: 10px;
+    
+  }
+
+  .project-item p{
+    margin-left: 20px;
+  }
+  .project-item h2{
+    margin-left: 20px;
+  }
+
+
+  .main-ann{
+    grid-area: 1/3/4/4;
+    background-color: yellowgreen;
+    height: 100%;
+       
+}
+
+.ann{
+    height: 40%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.ann-item{
+    border: 15px;
+    background-color: red;
+    grid-area: 1/2/1/6;
+
+ 
+    
+}
+  
